@@ -249,12 +249,11 @@ textarea {
     .home-hero__cta a:first-child {
       margin-bottom: 25px;
     }
+    
 .about {
   background: #fafafa; }
 
-  /* .about__content-flex {
-    display: flex;
-  } */
+
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -271,6 +270,7 @@ textarea {
 
 
   }
+  
     @media only screen and (max-width: 56.25em) {
       .about__content {
         grid-template-columns: 1fr;
@@ -293,6 +293,23 @@ textarea {
         margin: 0 3px; }
       .about__content-flex-details-para:last-child {
         margin-bottom: 4rem; }
+
+  @media screen and (max-width: 600px) {
+    .about__content-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .about__content-title,
+    .about__content-flex-details-para{
+      text-align: center;
+    }
+    .skills {
+      display: flex;
+      justify-content: center;
+    }
+  }
 
 .projects__row {
   display: grid;
